@@ -1,5 +1,5 @@
 import folium
-
+import folium.plugins.fullscreen
 
 def create_map():
     m = folium.Map(location=[59.735870, 10.230375], zoom_start=13, min_zoom=6, max_zoom=22)
@@ -12,6 +12,8 @@ def create_map():
     m = quests(m)
     m = easter_egg(m)
     m = points_interest(m)
+    fs = folium.plugins.Fullscreen(position='topleft', title='Full Screen', title_cancel='Exit Full Screen', force_separate_button=False)
+    m.add_child(fs)
     m = m._repr_html_()
     return m
 # 59.829810, 10.239877 location fuglerud gård
