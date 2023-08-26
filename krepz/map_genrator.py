@@ -25,8 +25,8 @@ def create_map():
 def quests(map):
     quest_titles = ["Trial of Companionship", "Trial of Fire", "Trial of Accuracy", "Trial of Strength",
                     "Trial of Endurance"]
-    quest_locations = [[59.829342, 10.241066], [59.829169, 10.239305], [59.829896, 10.240092], [59.828633, 10.237008],
-                       [59.828640, 10.236100]]
+    quest_locations = [[59.829475, 10.240137], [59.829083, 10.239603], [59.829306, 10.241166], [59.829132, 10.239455],
+                       [59.827051, 10.234826]]
     icon_image = "https://wowchallenges.com/images/questionmark.png"
 
     for title, location in zip(quest_titles, quest_locations):
@@ -39,7 +39,7 @@ def quests(map):
 
 
 def artifacts(map):
-    location = [[59.729342, 10.241066], [59.729169, 10.239305], [59.729896, 10.240092], [59.728633, 10.237008]]
+    location = [[59.828392, 10.237148], [59.830808, 10.242754], [59.830229, 10.245778], [59.829411, 10.240839]]
     icon_image = 'https://cdn-icons-png.flaticon.com/512/4230/4230567.png'
     for location in location:
         i = folium.features.CustomIcon(icon_image, icon_size=(20, 20))
